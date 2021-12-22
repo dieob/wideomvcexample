@@ -18,4 +18,11 @@ public class WideoManagerImpl implements WideoManager {
 	{
 		return dao.getAllWideos();
 	}
+
+	public void saveWideo(WideoVO wideo) {
+		dao.saveWideo(wideo);
+		return;
+	}
+
+
 }

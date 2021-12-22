@@ -7,4 +7,5 @@ import co.wideo.demo.model.WideoVO;
 public interface WideoManager 
 {
 	public List<WideoVO> getAllWideos();
+	public void saveWideo(WideoVO wideo);
 }

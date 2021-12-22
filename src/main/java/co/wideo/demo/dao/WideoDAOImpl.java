@@ -39,4 +39,14 @@ public class WideoDAOImpl implements WideoDAO {
 		return this.wideos;
 		
 	}
+	
+	public void saveWideo(WideoVO wideo) {
+		wideo.setId(generateNextId());
+		wideos.add(wideo);
+	}
+
+
+	private Integer generateNextId() {
+		return this.wideos.get(this.wideos.size()-1).getId()+1;
+	}
 }
